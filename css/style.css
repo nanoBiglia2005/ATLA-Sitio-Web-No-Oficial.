@@ -623,13 +623,28 @@ footer{
     height: 3vw;
 }
 
+#main_container_contacto{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 50px 0px 50px 0px;
+}
+
 #container_contacto{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 50px 50px 50px;
     gap: 50px;
+}
+
+@media (max-width:950px) {
+    #mapa_google{
+        width: 600px;
+        height: 450px;
+    }
 }
 
 #form_wrapper{
@@ -707,6 +722,11 @@ form{
 @media (max-width: 650px){
     #h1_contacto{
         font-size: 25px;
+    }
+
+    #mapa_google{
+        width: 300px;
+        height: 400px;
     }
 
     #mensaje{
