@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar: The Last Airbender. Sitio Web No Oficial (Trama)</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img id="imagen_logo" src="./imagenes/logo_atla.png" alt="Logo de Avatar: The Last Airbender"> </a>
+        <div id="boton_hamburguesa" class="shadow_bg"><img src="./imagenes/menu_hamburguesa.png" style="height: 100%;"></div>
+        <nav id="navegador_header">
+            <a href="index.html"><p>INICIO</p></a>
+            <a href="trama.html"><p>TRAMA</p></a>
+            <a href="galeria.html"><p>GALERIA</p></a>
+            <a href="contacto.html"><p>CONTACTO</p></a>
+        </nav>
+    </header>
+
+    <section id="container_temporadas">
+        <a class="wrapper_temporada shadow_bg" id="wrapper_temporada_1" href="temporada_1.html">
+            <p class="numero_temporada" style="text-shadow: 2px 2px rgba(0, 202, 253, 0.637);">
+                TEMPORADA 1
+            </p>
+        </a>
+        <a class="wrapper_temporada shadow_bg" style="background-image: url(./imagenes/temporada\ 2.jpg);"  href="temporada_2.html">
+            <p class="numero_temporada" style="text-shadow: 2px 2px rgb(20, 163, 56);">
+                TEMPORADA 2
+            </p>
+        </a>
+        <a class="wrapper_temporada shadow_bg" id="wrapper_temporada_3"  href="temporada_3.html">
+            <p class="numero_temporada" style="text-shadow: 2px 2px rgb(209, 41, 41);">
+                TEMPORADA 3
+            </p>
+        </a>
+    </section>
+
+    <footer class="footer_shadow">
+            <div id="redes_sociales_footer">
+                <a href="https://www.facebook.com/avatarthelastairbenderla/?brand_redir=104956949616#" target="_blank" rel="noopener noreferrer"><img src="./imagenes/facebook.png" alt="Icono de Facebook."></a>
+                <a href="https://www.youtube.com/@avatarthelastairbender" target="_blank" rel="noopener noreferrer"><img src="./imagenes/youtube.png" alt="Icono de Youtube."></a>
+                <a href="https://www.tiktok.com/@AvatarLegends" target="_blank" rel="noopener noreferrer"><img src="./imagenes/tiktok.png" alt="Icono de Tiktok."></a>
+            </div>
+            <p id="texto_footer">© Nickelodeon 2005. Stefano Biglia 2025</p>
+    </footer>
+
+    <script>
+        const botonHamburguesa = document.getElementById('boton_hamburguesa');
+        const navHeader = document.getElementById('navegador_header');
+
+        botonHamburguesa.addEventListener('click', () => {
+            navHeader.classList.toggle('active');
+            botonHamburguesa.classList.toggle('click');
+        });
+    </script> 
+    
+</body>
+</html>
